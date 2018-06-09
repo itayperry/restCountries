@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Lora', serif;
+		}
+		main span {display: block;}
+		main .load-more-btn {
+			color: currentColor;
+			font-size: inherit;
+		}
+		section {
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			margin-bottom: 1rem;
+			width: calc(100% / 3);
+			height: 14rem;	
+		}
+		img {
+			border: 0.1rem solid brown;
+		}
+		.country-info {
+			padding: 1rem;
+			line-height: 2rem;
+			width: calc(100% - 11rem);
+			min-width: 12rem;
+		}
+		h1 {
+			text-align: center;
+		}
+		#center-all-results {
+			display: flex;
+			justify-content: center;
+		}
+		#countries-retreived {
+			display: flex;
+			flex-wrap: wrap;
+			text-align: center;
+			padding: 1rem;
+			margin: 1rem;
+		}
+		button, input {
+			padding: 0.5rem;
+			font-family: 'Lora', serif;
+		}
+		button, input[type=submit] {
+			color: white;
+			box-sizing: border-box;
+			background-color: #352c2c;
+		}
+		button {
+			margin-right: 0.5rem;
+		}
+		#options {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			margin-bottom: 2rem;
+			margin-top: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Welcome to the Countries' Info Website</h1>
+	</header>
+	<main>
+		<div id="options">
+			<button>Show All Countries</button>
+			<form action="">	
+				<input type="search" placeholder="Search Country By Name" name="look_by_name">
+				<input type="submit" value="submit">
+			</form>
+		</div>
+		<div id="center-all-results">
+			<div id="countries-retreived">
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
